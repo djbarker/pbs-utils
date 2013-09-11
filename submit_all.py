@@ -51,8 +51,8 @@ for f in flist:
     pbsf = open(pbs)
     newpbsf = open(pbs+'~','w')
     for line in pbsf.readlines():
-        if string.find(line,'WLDNAME')==0:
-            newpbsf.write('WLDNAME='+f)
+        if string.find(line,'WLD_FNAME')==0:
+            newpbsf.write('WLD_FNAME='+f)
         else:
             newpbsf.write(line)
 
