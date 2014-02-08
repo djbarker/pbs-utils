@@ -61,7 +61,8 @@ for f in flist:
     newpbsf.close()
 
     # submit the newly creates pbs script
+    print f
     sp.call(['qsub',pbs+'~'])
 
     # delete the temporary file
-    os.remove(pbs+'~')
+    #os.remove(pbs+'~')
